@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MovieAPI.Controllers.MovieController.AddMovie(MovieAPI.Data.Dtos.CreateMovieDto)">
+            <summary>
+            Add a new movie to the database
+            </summary>
+            <param name="movieDto">Object that contains the needed values for the request</param>
+            <returns>IActionResult</returns>
+            <response code="201">Created</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MovieController.GetMovies(System.Int32,System.Int32)">
+            <summary>
+            Get all the movies from the database
+            </summary>
+            <param name="skip">skip this many movies</param>
+            <param name="take">take this many movies</param>
+            <returns>IActionResult</returns>
+            <response code="200">Ok</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MovieController.GetMovieById(System.Int32)">
+            <summary>
+            Get a specific movie from the database
+            </summary>
+            <param name="id">movie id</param>
+            <returns>IActionResult</returns>
+            <response code="200">Ok</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MovieController.UpdateMovie(System.Int32,MovieAPI.Data.Dtos.UpdateMovieDto)">
+            <summary>
+            Get a specific movie
+            </summary>
+            <param name="id">movie id</param>
+            <param name="updateMovieDto">Object that constains the needed values fot the request</param>
+            <returns>IActionResult</returns>
+            <response code="204">NoContent</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MovieController.UpdateMoviePartially(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{MovieAPI.Data.Dtos.UpdateMovieDto})">
+            <summary>
+            Update a movie partially
+            </summary>
+            <param name="id">movie id</param>
+            <param name="patch">Object that constains the needed values fot the request</param>
+            <returns>IActionResult</returns>
+            <response code="204">NoContent</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MovieController.DeleteMovie(System.Int32)">
+            <summary>
+            Delete a movie
+            </summary>
+            <param name="id">movie id</param>
+            <returns>IActionResult</returns>
+            <response code="204">NoContent</response>
+        </member>
+        <member name="T:MovieAPI.Migrations.movitablecreation">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.movitablecreation.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.movitablecreation.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.movitablecreation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MovieAPI.Migrations.cinemaeendereco">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.cinemaeendereco.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.cinemaeendereco.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MovieAPI.Migrations.cinemaeendereco.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
